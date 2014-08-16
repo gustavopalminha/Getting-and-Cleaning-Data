@@ -97,34 +97,66 @@ Inside the run_analysis.R each section is commented clearing identifying whats b
 For project purposes lets discuss it a bit, so it starts by setting the working directory, loading plyr package and reading each file for train and test data objects using the read.table command which is the step 0.
 ```r
 testData <- read.table("./UCI HAR Dataset/test/X_test.txt",header=FALSE)
+testDataAct <- read.table("./UCI HAR Dataset/test/y_test.txt",header=FALSE)
+testDataSub <- read.table("./UCI HAR Dataset/test/subject_test.txt",header=FALSE)
+trainData <- read.table("./UCI HAR Dataset/train/X_train.txt",header=FALSE)
+trainDataAct <- read.table("./UCI HAR Dataset/train/y_train.txt",header=FALSE)
+trainDataSub <- read.table("./UCI HAR Dataset/train/subject_train.txt",header=FALSE)
 ...
 ```
-Next for step 3 it loads all labels and assigns them to train and test data objects....
+Next for step 3 it loads all labels and assigns them to train and test data objects, replacing _ inside the lower cased names ....
 ```r
 activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE,colClasses="character")
+trainDataAct$V1 <- gsub("_", " ", tolower(factor(trainDataAct$V1,levels=activityLabels$V1,labels=activityLabels$V2)))
+testDataAct$V1 <- gsub("_", " ", tolower(factor(testDataAct$V1,levels=activityLabels$V1,labels=activityLabels$V2)))
 ...
 ```
 For setp 4 it loads all features and assigns them to the train and test data object...
 ```r
 dataFeatures <- read.table("./UCI HAR Dataset/features.txt",header=FALSE,colClasses="character")
+colnames(testData) <- dataFeatures$V2
+colnames(trainData) <- dataFeatures$V2
+colnames(testDataAct) <- c("Activity")
+colnames(trainDataAct) <- c("Activity")
+colnames(testDataSub) <- c("Subject")
+colnames(trainDataSub) <- c("Subject")
 ...
 ```
 Now in step 1 it merges all data objects into one dataset (mergeData)...
 ```r
-...
+testData <- cbind(testDataAct,testData)
+testData <- cbind(testDataSub,testData)
+trainData <- cbind(trainDataAct,trainData)
+trainData <- cbind(trainDataSub,trainData)
 mergeData <- rbind(testData,trainData)
 ```
-Next it was extracted only the variables with std and mean on its name using the drep function for step 2...
+Next, for step 2, it was extracted only the variables with std or mean in its name using the grep function. Considering that 1st and 2nd column contains required data only a subset of the other columns are important..
 ```r
 importantCI <- grep("(mean|std)\\(\\)", names(mergeData))
 importantCI <- c(1:2, importantCI)
 mergeData <- mergeData[,importantCI]
+....
+```
+Now lets continue to tidy the columns names fixing removing undesires characters.... 
+```r
+....
 mergeDataCollumns <- names(mergeData)
 mergeDataCollumns <- gsub("(Body)\\1", "\\1", mergeDataCollumns)
-....
+mergeDataCollumns <- gsub("-", "", mergeDataCollumns)
+mergeDataCollumns <- gsub("^f", "Frequency", mergeDataCollumns)
+mergeDataCollumns <- gsub("Acc", "Accelerometer", mergeDataCollumns)
+mergeDataCollumns <- gsub("^t", "Time", mergeDataCollumns)
+mergeDataCollumns <- gsub("mean", "Mean", mergeDataCollumns)
+mergeDataCollumns <- gsub("std", "StandardDeviation", mergeDataCollumns)
+mergeDataCollumns <- gsub("([X-Z]$)", "\\1Direction", mergeDataCollumns)
+mergeDataCollumns <- gsub("Gyro", "Gyroscope", mergeDataCollumns)
+mergeDataCollumns <- gsub("Mag", "Magnitude", mergeDataCollumns)
+mergeDataCollumns <- gsub("\\(\\)", "", mergeDataCollumns)
+
 names(mergeData) <- mergeDataCollumns
+....
 ```
-Finally for step 5 a tidy dataset was created by computing the average of each variable (mergeDataMean)
+Finally, for step 5, a tidy dataset was created by computing the average of each variable (mergeDataMean) using the ddply function...
 ```r
 mergeDataMean <- ddply(mergeData, .(Activity, Subject), colwise(mean))
 ```
