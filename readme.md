@@ -11,10 +11,8 @@ Requirements
 Before running this script you need to:
 
 1. download and unzip the UCI_HAR_Dataset file to your working directory,
-
 2. adjust the stwd funcion inside the R file to define the working directory if its diferent from the default one,
-
-3. install the plyr package
+3. install the plyr package,
 
 Other details
 ---
