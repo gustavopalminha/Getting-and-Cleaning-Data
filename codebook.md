@@ -1,0 +1,131 @@
+Getting and Cleaning Data Course Project - Codebook
+
+==
+---
+Original dataset:
+---
+Attribution: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+Available at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+---
+Variable  - description:
+---
+Bellow one can find a filtered variable description based on the project instructions. More variables are contained inside the original dataset.
+- Subject - Identifier for each of the subject who participated on the study
+- Activity - Name of the activity which can be: walking, walking up, walking downstairs, sitting, standing and laying
+- TimeBodyAccelerometerMeanXDirection - Mean of Mean Body Accelerometer Time Domain Signal in the X Direction in seconds
+- TimeBodyAccelerometerMeanYDirection - Mean of Mean Body Accelerometer Time Domain Signal in the Y Direction in seconds
+- TimeBodyAccelerometerMeanZDirection - Mean of Mean Body Accelerometer Time Domain Signal in the Z Direction in seconds
+- TimeBodyAccelerometerStandardDeviationXDirection - Mean of Standard Deviation of Body Accelerometer Time Domain Signal in the X Direction in seconds
+- TimeBodyAccelerometerStandardDeviationYDirection - Mean of Standard Deviation of Body Accelerometer Time Domain Signal in the Y Direction in seconds
+- TimeBodyAccelerometerStandardDeviationZDirection - Mean of Standard Deviation of Body Accelerometer Time Domain Signal in the Z Direction in seconds
+- TimeGravityAccelerometerMeanXDirection - Mean of Mean Gravity Accelerometer Time Domain Signal in the X Direction in seconds
+- TimeGravityAccelerometerMeanYDirection - Mean of Mean Gravity Accelerometer Time Domain Signal in the Y Direction in seconds
+- TimeGravityAccelerometerMeanZDirection - Mean of Mean Gravity Accelerometer Time Domain Signal in the Z Direction in seconds
+- TimeGravityAccelerometerStandardDeviationXDirection - Mean of Standard Deviation of Gravity Accelerometer Time Domain Signal in the X Direction in seconds
+- TimeGravityAccelerometerStandardDeviationYDirection - Mean of Standard Deviation of Gravity Accelerometer Time Domain Signal in the Y Direction in seconds
+- TimeGravityAccelerometerStandardDeviationZDirection - Mean of Standard Deviation of Gravity Accelerometer Time Domain Signal in the Z Direction in seconds
+- TimeBodyAccelerometerJerkMeanXDirection - Mean of Mean Body Accelerometer Jerk Time Domain Signal in the X Direction in seconds
+- TimeBodyAccelerometerJerkMeanYDirection - Mean of Mean Body Accelerometer Jerk Time Domain Signal in the Y Direction in seconds
+- TimeBodyAccelerometerJerkMeanZDirection - Mean of Mean Body Accelerometer Jerk Time Domain Signal in the Z Direction in seconds
+- TimeBodyAccelerometerJerkStandardDeviationXDirection-   Mean of Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the X Direction in seconds
+- TimeBodyAccelerometerJerkStandardDeviationYDirection - Mean of Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Y Direction in seconds
+- TimeBodyAccelerometerJerkStandardDeviationZDirection - Mean of Standard Deviation of Body Accelerometer Jerk Time Domain Signal in the Z Direction in seconds
+- TimeBodyGyroscopeMeanXDirection - Mean of Mean Body Gyroscope Time Domain Signal in the X Direction in seconds
+- TimeBodyGyroscopeMeanYDirection - Mean of Mean Body Gyroscope Time Domain Signal in the Y Direction in seconds
+- TimeBodyGyroscopeMeanZDirection - Mean of Mean Body Gyroscope Time Domain Signal in the Z Direction in seconds
+- TimeBodyGyroscopeStandardDeviationXDirection - Mean of Standard Deviation of Body Gyroscope Time Domain Signal in the X Direction in seconds
+- TimeBodyGyroscopeStandardDeviationYDirection - Mean of Standard Deviation of Body Gyroscope Time Domain Signal in the Y Direction in seconds
+- TimeBodyGyroscopeStandardDeviationZDirection - Mean of Standard Deviation of Body Gyroscope Time Domain Signal in the Z Direction in seconds
+- TimeBodyGyroscopeJerkMeanXDirection - Mean of Mean Body Gyroscope Jerk Time Domain Signal in the X Direction in seconds
+- TimeBodyGyroscopeJerkMeanYDirection - Mean of Mean Body Gyroscope Jerk Time Domain Signal in the Y Direction in seconds
+- TimeBodyGyroscopeJerkMeanZDirection - Mean of Mean Body Gyroscope Jerk Time Domain Signal in the Z Direction in seconds
+- TimeBodyGyroscopeJerkStandardDeviationXDirection - Mean of Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the X Direction in seconds
+- TimeBodyGyroscopeJerkStandardDeviationYDirection - Mean of Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the Y Direction in seconds
+- TimeBodyGyroscopeJerkStandardDeviationZDirection - Mean of Standard Deviation of Body Gyroscope Jerk Time Domain Signal in the Z Direction in seconds
+- TimeBodyAccelerometerMagnitudeMean - Mean of Mean Body Accelerometer Magnitude Time Domain Signal in seconds
+- TimeBodyAccelerometerMagnitudeStandardDeviation - Mean of Standard Deviation of Body Accelerometer Magnitude Time Domain Signal in seconds
+- TimeGravityAccelerometerMagnitudeMean - Mean of Mean Gravity Accelerometer Magnitude Time Domain Signal in seconds
+- TimeGravityAccelerometerMagnitudeStandardDeviation - Mean of Standard Deviation of Gravity Accelerometer Magnitude Time Domain Signal in seconds
+- TimeBodyAccelerometerJerkMagnitudeMean - Mean of Mean Body Accelerometer Jerk Magnitude Time Domain Signal in seconds
+- TimeBodyAccelerometerJerkMagnitudeStandardDeviation - Mean of Standard Deviation of Body Accelerometer Jerk Magnitude Time Domain Signal in seconds
+- TimeBodyGyroscopeMagnitudeMean - Mean of Mean Body Gyroscope Magnitude Time Domain Signal in seconds
+- TimeBodyGyroscopeMagnitudeStandardDeviation - Mean of Standard Deviation of Body Gyroscope Magnitude Time Domain Signal in seconds
+- TimeBodyGyroscopeJerkMagnitudeMean - Mean of Mean Body Gyroscope Jerk Magnitude Time Domain Signal in seconds
+- TimeBodyGyroscopeJerkMagnitudeStandardDeviation - Mean of Standard Deviation of Body Gyroscope Jerk Magnitude Time Domain Signal in seconds
+- FrequencyBodyAccelerometerMeanXDirection - Mean of Mean Body Accelerometer Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyAccelerometerMeanYDirection - Mean of Mean Body Accelerometer Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyAccelerometerMeanZDirection - Mean of Mean Body Accelerometer Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyAccelerometerStandardDeviationXDirection - Mean of Standard Deviation of Body Accelerometer Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyAccelerometerStandardDeviationYDirection - Mean of Standard Deviation of Body Accelerometer Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyAccelerometerStandardDeviationZDirection - Mean of Standard Deviation of Body Accelerometer Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyAccelerometerJerkMeanXDirection - Mean of Mean Body Accelerometer Jerk Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyAccelerometerJerkMeanYDirection - Mean of Mean Body Accelerometer Jerk Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyAccelerometerJerkMeanZDirection - Mean of Mean Body Accelerometer Jerk Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyAccelerometerJerkStandardDeviationXDirection - Mean of Standard Deviation of Body Accelerometer Jerk Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyAccelerometerJerkStandardDeviationYDirection - Mean of Standard Deviation of Body Accelerometer Jerk Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyAccelerometerJerkStandardDeviationZDirection - Mean of Standard Deviation of Body Accelerometer Jerk Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyGyroscopeMeanXDirection - Mean of Mean Body Gyroscope Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyGyroscopeMeanYDirection - Mean of Mean Body Gyroscope Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyGyroscopeMeanZDirection - Mean of Mean Body Gyroscope Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyGyroscopeStandardDeviationXDirection - Mean of Standard Deviation of Body Gyroscope Frequency Domain Signal in the X Direction in hertz
+- FrequencyBodyGyroscopeStandardDeviationYDirection - Mean of Standard Deviation of Body Gyroscope Frequency Domain Signal in the Y Direction in hertz
+- FrequencyBodyGyroscopeStandardDeviationZDirection - Mean of Standard Deviation of Body Gyroscope Frequency Domain Signal in the Z Direction in hertz
+- FrequencyBodyAccelerometerMagnitudeMean - Mean of Mean Body Accelerometer Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyAccelerometerMagnitudeStandardDeviation - Mean of Standard Deviation of Body Accelerometer Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyAccelerometerJerkMagnitudeMean - Mean of Mean Body Accelerometer Jerk Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyAccelerometerJerkMagnitudeStandardDeviation - Mean of Standard Deviation of Body Accelerometer Jerk Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyGyroscopeMagnitudeMean - Mean of Mean Body Gyroscope Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyGyroscopeMagnitudeStandardDeviation - Mean of Standard Deviation of Body Gyroscope Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyGyroscopeJerkMagnitudeMean - Mean of Mean Body Gyroscope Jerk Magnitude Frequency Domain Signal in hertz
+- FrequencyBodyGyroscopeJerkMagnitudeStandardDeviation - Mean of Standard Deviation of Body Gyroscope Jerk Magnitude Frequency Domain Signal in hertz
+
+-------
+Code guidelines (working with files)
+-------
+Considering the project description where it was referred that the student should create one R script called run_analysis.R that does the following: 
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+Inside the run_analysis.R each section is commented clearing identifying whats being done, however considering that it only contains 65 lines of code there's not much to comment :)
+
+For project purposes lets discuss it a bit, so it starts by setting the working directory, loading plyr package and reading each file for train and test data objects using the read.table command which is the step 0.
+```r
+testData <- read.table("./UCI HAR Dataset/test/X_test.txt",header=FALSE)
+...
+```
+Next for step 3 it loads all labels and assigns them to train and test data objects....
+```r
+activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE,colClasses="character")
+...
+```
+For setp 4 it loads all features and assigns them to the train and test data object...
+```r
+dataFeatures <- read.table("./UCI HAR Dataset/features.txt",header=FALSE,colClasses="character")
+...
+```
+Now in step 1 it merges all data objects into one dataset (mergeData)...
+```r
+...
+mergeData <- rbind(testData,trainData)
+```
+Next it was extracted only the variables with std and mean on its name using the drep function for step 2...
+```r
+importantCI <- grep("(mean|std)\\(\\)", names(mergeData))
+importantCI <- c(1:2, importantCI)
+mergeData <- mergeData[,importantCI]
+mergeDataCollumns <- names(mergeData)
+mergeDataCollumns <- gsub("(Body)\\1", "\\1", mergeDataCollumns)
+....
+names(mergeData) <- mergeDataCollumns
+```
+Finally for step 5 a tidy dataset was created by computing the average of each variable (mergeDataMean)
+```r
+mergeDataMean <- ddply(mergeData, .(Activity, Subject), colwise(mean))
+```
+
+The final output is inside the tidy_data.txt file.
